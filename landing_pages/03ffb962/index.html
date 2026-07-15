@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email summarizer and auto-reply generator: fetch recent unread emails, use LLM to summarize each thread and draft concise reply suggestions, then save drafts as markdown files.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', system-ui, sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 min-h-screen">
+<div class="bg-gray-50 min-h-screen flex flex-col">
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl font-bold text-gray-900">Email Summarizer &amp; Auto‑Reply Generator</h1>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <!-- Hero -->
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto py-12 px-4 text-center sm:py-16 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">
+          Stay on top of your inbox, effortlessly
+        </h2>
+        <p class="mt-4 text-lg leading-6 text-gray-600">
+          Fetch recent unread emails, let a powerful LLM summarize each thread and draft concise reply suggestions—saved instantly as markdown drafts.
+        </p>
+        <div class="mt-8">
+          <a href="#" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-md px-8 py-3 text-lg">
+            Buy Now – $18.99
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="bg-gray-100 py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h3 class="text-3xl font-bold text-center text-gray-800 mb-8">Key Benefits</h3>
+        <dl class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+            <svg class="mx-auto h-12 w-12 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18M3 17h18"/></svg>
+            <dt class="mt-4 text-lg leading-6 font-medium text-gray-900">Instant Summaries</dt>
+            <dd class="mt-2 text-base text-gray-600">Get concise overviews of each email thread in seconds.</dd>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+            <svg class="mx-auto h-12 w-12 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6M9 16h6M9 8h6"/></svg>
+            <dt class="mt-4 text-lg leading-6 font-medium text-gray-900">Smart Reply Drafts</dt>
+            <dd class="mt-2 text-base text-gray-600">AI‑generated suggestions ready to edit or send.</dd>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+            <svg class="mx-auto h-12 w-12 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <dt class="mt-4 text-lg leading-6 font-medium text-gray-900">Markdown Drafts</dt>
+            <dd class="mt-2 text-base text-gray-600">Save replies directly as clean markdown files.</dd>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+            <svg class="mx-auto h-12 w-12 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3"/></svg>
+            <dt class="mt-4 text-lg leading-6 font-medium text-gray-900">Zero Setup</dt>
+            <dd class="mt-2 text-base text-gray-600">Plug‑and‑play automation by T.O.A.A.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="bg-white py-12">
+      <div class="max-w-3xl mx-auto text-center">
+        <h3 class="text-3xl font-bold text-gray-900 mb-4">One‑Time Purchase</h3>
+        <p class="text-5xl font-extrabold text-indigo-600 mb-6">$18.99</p>
+        <a href="#" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-md px-10 py-4 text-lg">
+          Buy Now
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800">
+    <div class="max-w-7xl mx-auto py-6 px-4 text-center text-gray-400">
+      © <span id="year"></span> Auto‑Generated Automation by T.O.A.A. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</div>
+</body>
+</html>
